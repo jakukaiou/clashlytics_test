@@ -162,6 +162,7 @@
 				40B7A98C1E403D7C009CBB75 /* Resources */,
 				2DBFC397A1530F07EFDE75DB /* [CP] Embed Pods Frameworks */,
 				740CE2497264837D03634B3E /* [CP] Copy Pods Resources */,
+				40D75DAB1E40440A001E1EF8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -296,6 +297,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashlyticsTest/Pods-CrashlyticsTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		40D75DAB1E40440A001E1EF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" dadb60d59fe61c841055c0b4522a03e481f1c261 009f3fa05081d65171d0b5ce9bcb502b5c932460cf0c40b507685a54b25fbe0f";
 		};
 		740CE2497264837D03634B3E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -488,6 +502,7 @@
 			baseConfigurationReference = E235A6166FD9FDA6603648EB /* Pods-CrashlyticsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = CrashlyticsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CrashlyticsTest;
@@ -501,6 +516,7 @@
 			baseConfigurationReference = E734C365CA4013D558AA3FDD /* Pods-CrashlyticsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = CrashlyticsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.CrashlyticsTest;
@@ -582,6 +598,7 @@
 				40B7A9B81E403D7C009CBB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40B7A9B91E403D7C009CBB75 /* Build configuration list for PBXNativeTarget "CrashlyticsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +607,7 @@
 				40B7A9BB1E403D7C009CBB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40B7A9BC1E403D7C009CBB75 /* Build configuration list for PBXNativeTarget "CrashlyticsTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +616,7 @@
 				40B7A9BE1E403D7C009CBB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

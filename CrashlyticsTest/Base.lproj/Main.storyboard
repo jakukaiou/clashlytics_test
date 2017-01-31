@@ -21,17 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CrashlyticsTest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC8-rS-ioD">
-                                <rect key="frame" x="129" y="323" width="117" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dq-OA-wiM">
+                                <rect key="frame" x="142" y="318" width="90" height="30"/>
+                                <state key="normal" title="Crash Button"/>
+                                <connections>
+                                    <action selector="crashApplication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5f-DP-CQ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DC8-rS-ioD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oyn-Xe-rUw"/>
-                            <constraint firstItem="DC8-rS-ioD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wRH-KR-uvF"/>
+                            <constraint firstItem="9dq-OA-wiM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iuX-M8-TbX"/>
+                            <constraint firstItem="9dq-OA-wiM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v4T-rS-OLB"/>
                         </constraints>
                     </view>
                 </viewController>
